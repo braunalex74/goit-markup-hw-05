@@ -592,7 +592,7 @@ img {
 /*---------------MODAL---------------*/
 .backdrop.is-hidden {
     visibility: hidden;
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
 }
 .backdrop {
