@@ -113,6 +113,8 @@ img {
     margin-left: auto;
 }
 .header-link {
+    position: relative;
+
     color: var(--title-text-color);
 }
 .header-nav-list .header-link:hover,
@@ -143,12 +145,6 @@ img {
 .contact-icon {
     margin-right: 10px;
     fill: currentColor;
-}
-a.current {
-    color: var(--accent-color);
-}
-.header-link {
-    position: relative;
 }
 .current::after {
     position: absolute;
