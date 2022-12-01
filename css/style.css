@@ -665,9 +665,8 @@ img {
     fill: var(--hover-color);
 }
 .modal-close-icon {
-    width: 18px;
-    height: 18px;
+    
+    
     fill: var(--hover-color);
-    z-index: 3;
 }
   
