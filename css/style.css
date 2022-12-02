@@ -270,22 +270,8 @@ img {
 }
 .employment-list {
     display: flex;
-
-    position: relative;
-    overflow: hidden;
-}
-.employment-list:hover {
-    transform: translateY(0);
 }
 .employment-list > .employment-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(-100%);
-    transition: transform 250ms ease;
-
     width: calc((100% - 60px) / 3);
     margin-top: 0;
     margin-bottom: 0;
@@ -305,6 +291,29 @@ img {
     margin-top: 0;
     margin-bottom: 50px;
 }
+.employment-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.image-label {
+    position: absolute;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--primary-white-color);
+    background: rgba(47, 48, 58, 0.8);
+    }
 
 /*---------------TEAM---------------*/
 .section-team {
