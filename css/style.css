@@ -267,8 +267,22 @@ img {
 }
 .employment-list {
     display: flex;
+
+    position: relative;
+    overflow: hidden;
+}
+.employment-list:hover {
+    transform: translateY(0);
 }
 .employment-list > .employment-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    transition: transform 250ms ease;
+
     width: calc((100% - 60px) / 3);
     margin-top: 0;
     margin-bottom: 0;
@@ -287,28 +301,6 @@ img {
 .employment-title {
     margin-top: 0;
     margin-bottom: 50px;
-}
-.employment-box {
-    position: relative;
-}
-.image-label {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    margin-bottom: 0;
-    width: 100%;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: var(--primary-white-color);
-    background: rgba(47, 48, 58, 0.8);
 }
 
 /*---------------TEAM---------------*/
@@ -627,7 +619,7 @@ img {
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
-    
+    overflow: visible;
 }
 .backdrop {
     position: fixed;
@@ -640,14 +632,12 @@ img {
 }
 .modal{
     position: absolute;
-    padding: 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     width: 528px;
     height: 581px;
-    min-height: 600px;
 
     background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -655,19 +645,11 @@ img {
 }
 .modal-close-button {
     position: absolute;
-    top: 8px;
-    right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0;
+    top: 10px;
+    right: 10px;
     width: 30px;
     height: 30px;
+    background-color: transparent;
+    border: 1px solid #999999;
     border-radius: 50%;
-    fill: var(--hover-color);
 }
-.modal-close-icon {
-    fill: var(--hover-color);
-}
-  
