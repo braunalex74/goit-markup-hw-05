@@ -116,6 +116,7 @@ img {
     position: relative;
 
     color: var(--title-text-color);
+    transition: color 250ms linear;
 }
 .header-nav-list .header-link:hover,
 .header-nav-list .header-link:focus {
@@ -132,7 +133,8 @@ img {
     justify-content: center;
     align-items: center;
 
-    color: var(--primary-text-color);   
+    color: var(--primary-text-color);
+    transition: color 250ms linear;   
 }
 .header-contact:hover,
 .header-contact:focus {
@@ -145,6 +147,7 @@ img {
 .contact-icon {
     margin-right: 10px;
     fill: currentColor;
+    transition: fill 250ms linear;
 }
 .current::after {
     position: absolute;
@@ -370,6 +373,7 @@ img {
     justify-content: center;
     align-items: center;
     color: var(--icon-color);
+    transition: background-color 250ms linear, color 250ms linear;
 }
 .team-soc-link:hover {
     background-color: var(--accent-color);
@@ -426,6 +430,7 @@ img {
     color: var(--icon-color);
     border: 1px solid var(--icon-color);
     border-radius: 4px;
+    transition: border 250ms linear;
 }
 .client-link:hover,
 .client-link:focus {
@@ -437,6 +442,7 @@ img {
 }
 .client-icon {
     fill: currentColor;
+    transition: fill 250ms linear;
 }
 
 /*---------------PORTFOLIO---------------*/
@@ -463,6 +469,7 @@ img {
     color: var(--title-text-color);
     background: var(--background-color_2);
     border-radius: 4px;
+    transition: color 250ms linear, background-color 250ms linear;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -585,6 +592,7 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms linear;
 }
 .footer-contact:hover,
 .footer-contact:focus {
@@ -625,6 +633,7 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     color: var(--primary-white-color);
+    transition: background-color 250ms linear;
 }
 .footer-soc-link:hover {
     background-color: var(--accent-color);
