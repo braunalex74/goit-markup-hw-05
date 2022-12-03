@@ -695,7 +695,6 @@ img {
     right: 8px;
     padding: 0;
     background-color: var(--primary-white-color);
-    fill: var(--icon-color);
 }
 .modal-close-icon {
     color: currentColor;
