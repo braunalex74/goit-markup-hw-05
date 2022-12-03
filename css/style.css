@@ -199,6 +199,7 @@ img {
     color: var(--primary-white-color);
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms linear;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -422,14 +423,9 @@ img {
 .client-item {    
     width: 172px;
     height: 92px;
-    transition: border 1000ms linear;
 }
 .client-item:not(:last-child) {
     margin-right: 30px;
-}
-.client-item:hover,
-.client-item:focus {
-    border: 1px solid var(--accent-color);
 }
 .client-link {
     width: 100%;
@@ -440,6 +436,7 @@ img {
     color: var(--icon-color);
     border: 1px solid var(--icon-color);
     border-radius: 4px;
+    transition: border 250ms linear;
 }
 .client-link:hover,
 .client-link:focus {
@@ -451,7 +448,7 @@ img {
 }
 .client-icon {
     fill: currentColor;
-    transition: fill 1000ms linear;
+    transition: fill 250ms linear;
 }
 
 /*---------------PORTFOLIO---------------*/
@@ -703,4 +700,7 @@ img {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+.modal-close-icon {
+    fill: currentColor
 }
