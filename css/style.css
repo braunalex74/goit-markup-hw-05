@@ -686,6 +686,17 @@ img {
     visibility: hidden;
     pointer-events: none;
 }
+.modal-close-button {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    background-color: var(--primary-white-color);
+    fill: var(--icon-color);
+}
 .modal-close-icon {
     color: currentColor;
 }
