@@ -681,26 +681,11 @@ img {
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0) rotate(180deg);
 }
-.modal-close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     
-    width: 30px;
-    height: 30px;
-
-    background-color: transparent;
-    border: 1px solid #999999;
-    border-radius: 50%;
-}
 .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 .modal-close-icon {
-    fill: currentColor
+    color: currentColor;
 }
